@@ -1,0 +1,59 @@
+<div class="container">
+  <img src="../../assets/image/cbf-afa.jpg" alt="Description of the image" class="center-image">
+  <div class="scoreboard">
+    <h2>Match en direct</h2>
+    <p>{{ time }}</p>
+    <div class="teams">
+      <img [src]="team1Logo" alt="Logo de l'équipe 1">
+      <p>{{ scoreTeam1 }} - {{ scoreTeam2 }}</p>
+      <img [src]="team2Logo" alt="Logo de l'équipe 2">
+    </div>
+    
+    <!-- Statistiques -->
+    <div *ngFor="let stat of stats" class="stat">
+      <p>{{ stat.name }}</p>
+      <div class="bar">
+        <div [style.width.%]="stat.team1 * 10"></div>
+        <div [style.width.%]="stat.team2 * 10"></div>
+      </div>
+      <p>{{ stat.team1 }} : {{ stat.team2 }}</p>
+    </div> 
+  </div> 
+</div>
+
+<div class="football-match-rei">
+  <div class="title-mFt">
+    <div class="football-match-XF4">
+      <span class="football-match-XF4-sub-0">⚽</span>
+      <span class="football-match-XF4-sub-1">Football Match</span>
+    </div>
+    <div class="menu-DXC">
+      <!-- Placeholder for menu content -->
+    </div>
+  </div>
+  <div class="result-match-UV4" *ngFor="let match of matches">
+    <div class="result-32N">
+      <div class="team-LnA">
+        <div class="container2">
+          <div class="team-UtN">
+            <img [src]="match.team1.logo" alt="{{ match.team1.name }} Logo">
+            <div class="left-align">{{ match.team1.name }}</div>
+          </div>
+          <div class="score-Q9k">{{ match.score }}</div>
+          <div class="team-Eea">
+            <div class="right-align">{{ match.team2.name }}</div>
+            <img [src]="match.team2.logo" alt="{{ match.team2.name }} Logo">
+          </div>
+        </div>
+      </div>
+      <div class="time-SEr">{{ match.time }}</div>
+      <div class="status-hAn">
+        <div class="december-2023-1hG">{{ match.status.date }}</div>
+        <div class="icon-8mt">
+          <img [src]="match.status.icon1" alt="Icon 1">
+          <img [src]="match.status.icon2" alt="Icon 2">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

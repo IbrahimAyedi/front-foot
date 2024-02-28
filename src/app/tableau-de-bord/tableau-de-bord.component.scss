@@ -1,0 +1,229 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .container2{
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+ 
+  }
+  .scoreboard {
+    max-width: 600px;
+    background-color: white;
+    padding: 70px;
+    border-radius: 60px;
+  }
+
+    h2 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size:24px; 
+    }
+
+    p {
+        color:#666; 
+        font-size:18px; 
+        text-align:center; 
+    }
+
+    .teams {
+        display:flex; 
+        align-items:center; 
+        justify-content:center; 
+        margin-bottom:40px;
+
+        img{
+            width :50px ; 
+            height:auto ; 
+        }
+        
+        p{
+            margin :0 20px ; 
+        }
+       
+    }
+
+    .stat {
+        margin-bottom: 20px;
+
+        p {
+            color:#333 ;
+            font-size: 18px ;
+            text-align: center ;
+        }
+
+        .bar {
+            display: flex;
+            box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.5); /* Adding shadow with a color similar to background color #00f */ 
+            justify-content: space-between;
+        
+            div {
+                height: 10px;
+                border-radius: 5px;
+                flex-grow: 1; /* Distribute available space equally among the bars */
+            }
+            
+            div:first-child {
+                background-color: #00f;
+                box-shadow: 1px 0px 1px rgba(0, 0, 255, 0.5); /* Adjusted shadow with smaller blur radius and positioned to the right */
+                margin-right: 10px; /* Adjusted margin to create smaller space between bars */
+            }
+            
+            div:last-child {
+                background-color: #0f0;
+                margin-left: 10px; 
+            }
+        }
+        
+        
+    }
+    .center-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        height: 75%;
+      }
+      
+
+      .football-match-rei {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .title-mFt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+
+    .football-match-XF4 {
+      display: flex;
+      align-items: center;
+
+      .football-match-XF4-sub-0 {
+        font-size: 24px;
+        color: #333;
+      }
+
+      .football-match-XF4-sub-1 {
+        font-size: 20px;
+        color: #333;
+        margin-left: 10px;
+      }
+    }
+
+    .menu-DXC {
+      // Placeholder for menu content
+    }
+  }
+
+  .result-match-UV4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+
+    .result-32N {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .team-LnA {
+        display: flex;
+        align-items: center;
+
+        .team-UtN {
+          display: flex;
+          align-items: center; /* Vertical alignment */
+      
+
+          img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+
+          .argentina-K8J {
+            font-size: 20px;
+            color: #333;
+
+          }
+        }
+
+        .score-Q9k {
+          font-size: 24px;
+          color: #333;
+          flex: 0 0 auto;
+          display:inline;
+        }
+
+        .team-Eea {
+          display: flex;
+          align-items: center; /* Vertical alignment */
+          justify-content: flex-end;
+         
+      
+          img {
+            width: 50px;
+            height: 50px;
+            margin-left: 15px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+
+          .team-Eea.italy-oBt {
+            font-size: 20px;
+            color: #333;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .time-SEr {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .status-hAn {
+        display: flex;
+        align-items: center;
+
+        .december-2023-1hG {
+          font-size: 16px;
+          color: #333;
+        }
+
+        .icon-8mt {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            
+          }
+        }
+      }
+    }
+  }
+}
+      
+.left-align {
+  margin-right: 10px;
+}
+
+.right-align {
+  margin-left: 10px;
+}     
+      
